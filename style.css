@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #50555e;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+li,
+a,
+.btn,
+button {
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+header {
+    z-index: 1;
+    position: fixed;
+    padding: 30px 2%;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.logo {
+    position: fixed;
+    cursor: pointer;
+}
+
+header .nav {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+header .dropdown {
+    position: fixed;
+    right: 2%;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav li a {
+    transition: all 0.3s ease 0s;
+
+}
+
+.nav li a:hover {
+    background-color: rgba(58, 58, 58, 0.2);
+    opacity: 0.5;
+    border: none;
+    border-radius: 50px;
+    padding: 9px 25px;
+
+}
+
+
+
+
+
+.btn-dark {
+    padding: 15px 53px;
+    color: #fff;
+    background-color: rgba(48, 48, 48, 0.9);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn-light {
+    padding: 15px 40px;
+    background-color: rgba(250, 250, 250, 0.9);
+    border: none;
+    border-radius: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+
+.home {
+    height: 100vh;
+
+}
+
+.home_sec {
+    height: 100vh;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 170px 0 100px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.home_header h2 {
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.home_header p {
+    font-size: 15px;
+}
+
+
+
+.home_sec:nth-child(1) {
+    background-image: url(models/models.jpg);
+}
+
+.home_sec:nth-child(2) {
+    background-image: url(modelx/modelx.jpg);
+}
+
+.home_sec:nth-child(3) {
+    background-image: url(modely/modely.jpg)
+}
+
+.home_sec:nth-child(4) {
+    background-image: url(model3/model3.jpg);
+}
+
+
+
+
+
+
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+
+footer {
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    padding-left: 750px;
+}
+
+footer p {
+    padding: 0 30px;
+}
+
+
+@media screen and (max-width: 700px) {
+    #menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .home_button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        display: none;
+    }
+}

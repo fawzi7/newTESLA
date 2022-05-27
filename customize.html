@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tesla</title>
+  <link rel="stylesheet" href="customize.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo"><img src="tesla-logo.svg" width="120px"></a>
+
+    <div class="nav" id="menu">
+        <li><a href="modelx.html">Model X</a></li>
+        <li><a href="modely.html">Model Y</a></li>
+        <li><a href="models.html">Model S</a></li>
+        <li><a href="model3.html">Model 3</a></li>
+    </div>
+
+    <div class="dropdown">
+        <ul class="nav" id="menubtn">
+            <li><a href="#" role="button" id="dropbtn">Menu</a></li>
+        </ul>
+        <div class="dropdown-content">
+            <a href="modelx.html">Model X</a>
+            <a href="modely.html">Model Y</a>
+            <a href="models.html">Model S</a>
+            <a href="model3.html">Model 3</a>
+            <a href="customize.html">CUSTOMIZE</a>
+            <a href="about.html">About US</a>
+        </div>
+    </div>
+
+</header>
+
+  <main class="home">
+    <section class="home_sec" id="one">
+        <div class="custom">
+            <img id="myImage" src="customize/red.png">
+            <div class="info">
+                <button class="color" style="background-color: white; " onclick="document.getElementById('myImage').src='customize/white.png'">white</button>
+                <button class="color" style="background-color:red; color: white;" onclick="document.getElementById('myImage').src='customize/red.png'">red</button>
+                <button class="color" style="background-color: blue; color: white;" onclick="document.getElementById('myImage').src='customize/blue.png'">blue</button>
+                <button class="color" style="background-color: black; color: white;" onclick="document.getElementById('myImage').src='customize/black.png'">black</button>
+            </div>
+        </div>
+    </section>
+  </main>
+
+
+</body>
+</html>
